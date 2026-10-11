@@ -8,6 +8,9 @@
 		"LS_ADLS_properties_typeProperties_url": {
 			"value": "https://caresyncprojectt.dfs.core.windows.net/"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"value": "1011-052340-xij2fjx7"
+		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://caresync-keyvaulttt.vault.azure.net/"
 		},

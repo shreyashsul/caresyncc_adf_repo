@@ -11,6 +11,10 @@
 			"type": "string",
 			"defaultValue": "https://caresyncprojectt.dfs.core.windows.net/"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1011-052340-xij2fjx7"
+		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://caresync-keyvaulttt.vault.azure.net/"
@@ -71,6 +75,9 @@
 					},
 					"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
 					},
 					"LS_AzureSqlDatabase_properties_typeProperties_server": {
 						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_server')]"
