@@ -18,7 +18,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT table_is,gold_table_name FROM ctrl.table_config WHERE is_active=1 and \nstage ='SILVER_TO_GOLD'",
+							"value": "SELECT table_id,gold_table_name FROM ctrl.table_config WHERE is_active=1 and \nstage ='SILVER_TO_GOLD'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
