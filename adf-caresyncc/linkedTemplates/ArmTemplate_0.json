@@ -451,6 +451,23 @@
 										],
 										"scriptBlockExecutionTimeout": "02:00:00"
 									}
+								},
+								{
+									"name": "Update pipline is field",
+									"type": "Fail",
+									"dependsOn": [
+										{
+											"activity": "SILVER TO GOLD",
+											"dependencyConditions": [
+												"Failed"
+											]
+										}
+									],
+									"userProperties": [],
+									"typeProperties": {
+										"message": "Gold Notebook Field",
+										"errorCode": "500"
+									}
 								}
 							]
 						}
