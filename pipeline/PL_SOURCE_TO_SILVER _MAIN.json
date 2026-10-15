@@ -147,6 +147,23 @@
 								],
 								"scriptBlockExecutionTimeout": "02:00:00"
 							}
+						},
+						{
+							"name": "Update pipline is field",
+							"type": "Fail",
+							"dependsOn": [
+								{
+									"activity": "ingest from Source to silver",
+									"dependencyConditions": [
+										"Failed"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"message": "Inneer Pipeline failed",
+								"errorCode": "500"
+							}
 						}
 					]
 				}
